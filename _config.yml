@@ -1,0 +1,49 @@
+# Site settings
+title_left    : "Esra Nur"
+title_right   : "SOYLU" # default: ""
+description   : "Bir Pentester'ın notlarını ve yazıları tutuğu bir kişisel alandır"
+keywords      : "pentester, purple teamer, csoc engineer, soc t2 analyst"
+url           : https://nuresrasoylu.com # site url
+baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
+cover         : "" # image uri like logo/cover image for site seo
+
+google_analytics  : UA-83161908-4
+twitter_username  : "naoumine"
+comments_enabled  : false # if enabled (set to true), please provide your disqus_username
+disqus_shortname  : ""
+postshare_enabled : true
+
+# Build settings
+permalink   : /:title.html
+markdown    : kramdown
+highlighter : rouge
+
+source      : ./
+destination : ./_site
+
+# Sass configuration
+sass:
+  sass_dir  : assets/scss
+  style     : compressed # expanded
+
+# Author settings
+author:
+  name     : "Esra Nur SOYLU"
+
+plugins:
+  - jekyll-sitemap
+  - bourbon
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-redirect-from
+
+include:
+  - .htaccess
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md", "script"]

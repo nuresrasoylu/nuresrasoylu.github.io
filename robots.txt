@@ -1,0 +1,3 @@
+User-agent: *
+Crawl-delay: 120
+Sitemap: https://nuresrasoylu.com/sitemap.xml

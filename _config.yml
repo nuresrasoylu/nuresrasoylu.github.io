@@ -1,7 +1,7 @@
 # Site settings
 title_left    : "Esra Nur"
 title_right   : "SOYLU" # default: ""
-description   : "Bir Pentester'ın notlarını ve yazıları tutuğu bir kişisel alandır"
+description   : "Cyber Security"
 keywords      : "pentester, purple teamer, csoc engineer, soc t2 analyst"
 url           : https://nuresrasoylu.com # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank

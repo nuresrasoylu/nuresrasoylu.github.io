@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>Cyber Security</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 18 Jul 2019 17:37:37 +0300</pubDate>
+    <lastBuildDate>Thu, 18 Jul 2019 17:37:37 +0300</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>‘Natas’ Solutions 1-12</title>
+        <description>&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/01.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Natas teaches the basics of serverside web-security.&lt;/p&gt;
+
+&lt;h2 id=&quot;1&quot;&gt;1.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/02.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This was a simple question. We looked at the source code of the page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/03.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2&quot;&gt;2.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/04.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If right click is blocked , we use browser shortcuts to open the debugger.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/05.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3&quot;&gt;3.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/06.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Okeyi Let’s look source code.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/07.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Source reveals a hidden image located at /files/pixel.png.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/08.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Navigating to /files/, we see the file /files/users.txt which contains the password.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/09.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4&quot;&gt;4.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/10.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When we look source code, a comment in the source says:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/11.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;“[…] Not even Google will find it this time…”.
+Google indexes the web, but honours a site’s &lt;code class=&quot;highlighter-rouge&quot;&gt;robots.txt&lt;/code&gt; file, which tells crawlers not to visit web pages.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/12.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;robots.txt&lt;/code&gt; excludes the contents of &lt;code class=&quot;highlighter-rouge&quot;&gt;/s3cr3t/&lt;/code&gt;. Looking in this folder we find a file &lt;code class=&quot;highlighter-rouge&quot;&gt;user.txt&lt;/code&gt; which contains the password.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/13.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;5&quot;&gt;5.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/14.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can trick the server into thinking we’ve come from that URL by adding the Referer header to our HTTP request:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;“http://natas5.natas.labs.overthewire.org/”&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/15.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;6&quot;&gt;6.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/16.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Inspecting the site, we see that the following cookie has been set:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;loggedin=0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/17.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Change this cookie to 1, and the password is returned.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/18.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;7&quot;&gt;7.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/19.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the source code, we see an included file &lt;code class=&quot;highlighter-rouge&quot;&gt;/includes/secret.inc&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/20.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Navigating to this page, we see that the secret is &lt;code class=&quot;highlighter-rouge&quot;&gt;FOEIUWGHFEEUHOFUOIU&lt;/code&gt;. Enter this secret to get the password.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/21.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;8&quot;&gt;8.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/22.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/23.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A clue in the source says that the password we’re looking for is stored at &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/natas_webpass/natas8&lt;/code&gt; on the server. If we navigate to the Home or About page, we can change the value of page in the URL query to hit other files on disk.&lt;/p&gt;
+
+&lt;p&gt;The query &lt;code class=&quot;highlighter-rouge&quot;&gt;?page=../../../../etc/natas_webpass/natas8&lt;/code&gt; reveals the password.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/24.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;9&quot;&gt;9.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/25.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking at the source code, we see that the secret, when encoded must match:&lt;code class=&quot;highlighter-rouge&quot;&gt;3d3d516343746d4d6d6c315669563362&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/26.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To find out the clear text secret, we can reverse the encoding steps:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/27.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/28.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/28_2.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Submit this secret to see the password.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/29.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;10&quot;&gt;10.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/30.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking at the source code, we see that PHP passthru function.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/31.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In this level, user input is passed to the PHP passthru function:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;“passthru(“grep -i $key dictionary.txt”);”&lt;/code&gt;
+We can terminate the grep with a semicolon, run an arbitrary command, and comment any code that comes after with:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;; cat /etc/natas_webpass/natas10 #&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/32.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;11&quot;&gt;11.&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/33.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This level is the same as level 10.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/34.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;But the characters ;,&lt;/td&gt;
+      &lt;td&gt;and &amp;amp; are blocked by the server. We can utilise the grep to search for everything in the password file:&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.* /etc/natas_webpass/natas11 #&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/35.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 May 2019 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/natas-solutions-1-12.html</link>
+        <guid isPermaLink="true">http://localhost:4000/natas-solutions-1-12.html</guid>
+        
+        
+        <category>natas,</category>
+        
+        <category>hacking</category>
+        
+      </item>
+    
+      <item>
+        <title>Malware Analysis of Trojan Try to Hide with Anti-Reverse</title>
+        <description>&lt;p&gt;The hacker, who is the malware writer, tries to prevent the code from being detected and analyzed by a reverse engineer by making a number of obfusucating code or packaging to prevent the code from being recognized. But each program that uses obfusucating or packaging is not harmful because some legal products may use this method to prevent programs from being cracked.&lt;/p&gt;
+
+&lt;p&gt;To examine these types of malware, we’ll produce a trojan that is made on both our packaging and obfusucating on Kali ourselves.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-06/01.png&quot; alt=&quot;Malware Analysis of Trojan Try to Hide with Anti-Reverse&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I created and encoded the malware file. And then I pack it with UPX.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-06/02.png&quot; alt=&quot;Malware Analysis of Trojan Try to Hide with Anti-Reverse&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When we uploaded the file to VirusTotal, that told us it was harmful.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-06/03.png&quot; alt=&quot;Malware Analysis of Trojan Try to Hide with Anti-Reverse&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-06/04.png&quot; alt=&quot;Malware Analysis of Trojan Try to Hide with Anti-Reverse&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the PEID, which is one of the tools used in the malware analysis phase, we can see whether the malicious file is packaged.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-06/05.png&quot; alt=&quot;Malware Analysis of Trojan Try to Hide with Anti-Reverse&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The UPX1, which we see in the EP Section, tells us that the file is packaged.
+I opened the code with the UPX opener.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-06/06.png&quot; alt=&quot;Malware Analysis of Trojan Try to Hide with Anti-Reverse&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When I analyzed the code with the strings tool; It is seen that DLL files like ntdll.dll, shel32, ws2_32, mswsock, advapi32, kernel32 are used by malicious.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-06/07.png&quot; alt=&quot;Malware Analysis of Trojan Try to Hide with Anti-Reverse&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What happens in these files:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ntdll.dll:&lt;/strong&gt; This dll file is not imported directly. Windows kernel is used to communicate with the operating system. Called indirectly from the Kernel32.dll file. If Ntdll.dll is being imported directly, you may be trying to store malicious functions or manipulate processes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;shell32.dll:&lt;/strong&gt; Used to execute commands given at the command line.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ws2_32:&lt;/strong&gt; Used to open the connection over the network.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;advapi32.dll:&lt;/strong&gt; User sided button is the dll file used for visual design, such as the drag bar and other components.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;kernel32.dll:&lt;/strong&gt; is a dll file where functions such as access, manipulation and manipulation of memory, files and hardware commonly used by malware and exploit codes are performed.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 06 Mar 2019 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/malware-analysis-of-trojan-try-to-hide-with-anti-reverse.html</link>
+        <guid isPermaLink="true">http://localhost:4000/malware-analysis-of-trojan-try-to-hide-with-anti-reverse.html</guid>
+        
+        
+        <category>malware,</category>
+        
+        <category>analysis,</category>
+        
+        <category>trojen</category>
+        
+      </item>
+    
+      <item>
+        <title>Static Malware Analysis of NetBus Trojan</title>
+        <description>&lt;p&gt;NetBus is one of the oldest malicious software. Contains NetBus.exe and patch.exe.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-05/01.png&quot; alt=&quot;Static Malware Analysis of NetBus Trojan&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The most damaging file is Patch. Clicking on this file opens the port and starts listening. Connection to Bind Shell type. The features of a RAT are present in this trojan (screenshoot, CDrom turn-off, Bind socket connection, etc.). The local IP address is 127.0.0.1, which is the default loopback IP address that is used to establish the connection in the NetBus panel.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-05/02.png&quot; alt=&quot;Static Malware Analysis of NetBus Trojan&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We start our analysis by setting the API from the key variable in the python script file on Remnux.&lt;/p&gt;
+
+&lt;h3 id=&quot;static-analysis-with-hash-value&quot;&gt;Static Analysis with Hash Value&lt;/h3&gt;
+
+&lt;p&gt;The summary values of the trojan were taken with the md5sum tool on Remnux.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-05/03.png&quot; alt=&quot;Static Malware Analysis of NetBus Trojan&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When we examine the summary value of patch.exe with vttool tool, 41 antivirus said that this file is trojen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-05/04.png&quot; alt=&quot;Static Malware Analysis of NetBus Trojan&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Similarly, when we examine the summary value of NetBus.exe, 32 antivirus has said that this file is trojan.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-05/05.png&quot; alt=&quot;Static Malware Analysis of NetBus Trojan&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;review-with-strings&quot;&gt;Review with Strings&lt;/h3&gt;
+
+&lt;p&gt;When this file is examined with the Strings command, certain words give us information about what the trojen does.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-05/06.png&quot; alt=&quot;Static Malware Analysis of NetBus Trojan&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When we look at the exe file with grep filter, we can see more clear results.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-05/07.png&quot; alt=&quot;Static Malware Analysis of NetBus Trojan&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The GDI32.dll that the trojan uses is a dll file that is used for graphical operations on Windows platforms. It can be estimated from the printout where the trojan can link to casino.com. We can also comment on the possibility that the trojan will also be able to perform the e-mail transactions. If we want to examine the process of sending mail in more detail we can learn certain information from string expressions.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-05/08.png&quot; alt=&quot;Static Malware Analysis of NetBus Trojan&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 05 Mar 2019 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/static-malware-analysis-of-netbus-trojan.html</link>
+        <guid isPermaLink="true">http://localhost:4000/static-malware-analysis-of-netbus-trojan.html</guid>
+        
+        
+        <category>malware,</category>
+        
+        <category>analysis,</category>
+        
+        <category>trojen</category>
+        
+      </item>
+    
+      <item>
+        <title>SOC 2 Type 2 Sertifikasyonu</title>
+        <description>&lt;p&gt;SOC (The Service Organization Control) 2 Type 2, “sistem ve organizasyon kontrolleri” anlamına gelir ve kontroller verilen bir servis organizasyonunun bilgilerini ne kadar iyi yürüttüğünü ve düzenlediğini ölçmeye yardımcı olmak için tasarlanmış bir dizi standarttır. SOC standartlarının amacı, üçüncü taraf satıcılarla ilişki kurduklarında kuruluşlara güven ve gönül rahatlığı sağlamaktır. SOC onaylı bir kuruluş, firmanın uygun SOC koruma önlemlerine ve prosedürlerine sahip olduğunu belirleyen bağımsız bir sertifikalı kamu muhasebecisi tarafından denetlenmiştir.&lt;/p&gt;
+
+&lt;p&gt;Daha spesifik olarak, SOC 2, müşteri verilerini bulutta depolayan servis sağlayıcılar için tasarlanmıştır. Şirketlerin, müşteri verilerinin güvenliği, kullanılabilirliği, işlenmesi, bütünlüğü ve gizliliğini içeren sıkı bilgi güvenliği politikaları ve prosedürleri oluşturmalarını ve takip etmelerini gerektirir.&lt;/p&gt;
+
+&lt;h3 id=&quot;soc-2-tip-2-tip-1den-nasıl-farklıdır&quot;&gt;SOC 2 Tip 2, Tip 1’den Nasıl Farklıdır?&lt;/h3&gt;
+
+&lt;p&gt;Tip 1 raporu, Güven Faktörü kriterlerini sağlama politikalarımızı ve prosedürlerimizi vurgularken, Tip 2 süreci üçüncü taraflarca 6 aylık bir denetim süresi gerektirir. Başka bir deyişle, SOC2 Tip 1, Güven Faktörlerini yönetmek için kullanılan politikaların ve prosedürlerin zaman içinde ölçülmesidir, SOC2 Tip 2 ise bu politikaların 6 aylık bir raporlama penceresinde güçlü kanıtlarla takip edildiğini kanıtlamaktadır.&lt;/p&gt;
+
+&lt;h3 id=&quot;soc-2-tip-2-denetimi-neyi-i̇nceliyor&quot;&gt;SOC 2 Tip 2 Denetimi Neyi İnceliyor?&lt;/h3&gt;
+
+&lt;p&gt;SOC 2, güvenli veri işleme ve depolamanın “Beş Güven Faktörü”ne bakar. Bu kriterlerden bir tanesinde yeterlilik göstermek, mahremiyet ve güvenlik kontrollerinin bir kanıtıdır:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Security:&lt;/strong&gt; Sistem hem fiziksel hem de mantıksal olarak yetkisiz erişime karşı korunur&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Availability:&lt;/strong&gt; Sistem çalıştırma için uygundur ve taahhüt edildiği veya kararlaştırıldığı şekilde kullanılır&lt;/p&gt;
+
+&lt;p&gt;Processing Integrity: Sistem,  eksiksiz, doğru, zamanında ve yetkili olarak işlemektedir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Confidentiality:&lt;/strong&gt; Gizli olarak belirtilen bilgi taahhüt veya kararlaştırılmış olarak korunur&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Privacy:&lt;/strong&gt; Kişisel bilgiler, operasyonun gizlilik bildirimine ve American Institute of Certified Public Accountants (AICPA) ve Canadian Institute of Chartered Accountants (CICA) tarafından belirlenen ilkelere uygun olarak toplanır, kullanılır, saklanır ve açıklanır.&lt;/p&gt;
+
+&lt;p&gt;SOC 2 raporları, yukarıdaki Güven Faktörlerinden bir veya daha fazlasına yönelik olabilir.&lt;/p&gt;
+
+&lt;h3 id=&quot;soc-2-tip-2-uyumluluğu-değişen-müşteriler-i̇çin-ne-i̇fade-ediyor&quot;&gt;SOC 2 Tip 2 Uyumluluğu, Değişen Müşteriler İçin Ne İfade Ediyor?&lt;/h3&gt;
+
+&lt;p&gt;SOC 2 Tip 2 uyumluluğu, müşterilerimize, bilgilerin güvenliğini sağlamak için sınıfının en iyisi koruma önlemlerine ve prosedürlerine sahip olduğumuzu garanti eder.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 21 Jan 2019 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/soc-2-type-2-sertifikasyonu.html</link>
+        <guid isPermaLink="true">http://localhost:4000/soc-2-type-2-sertifikasyonu.html</guid>
+        
+        
+        <category>soc</category>
+        
+      </item>
+    
+      <item>
+        <title>XXE Injection</title>
+        <description>&lt;p&gt;XML, the eXtensible Markum Language, is a mark language designed to standardize data communication between data exchange systems and platforms using the Internet.&lt;/p&gt;
+
+&lt;p&gt;The XML Injection vulnerability is triggered by invoking the specially defined entity while parsing the XML data. Parsing the XML data is the process of making the data understandable by the applications. Exploit of weakness the vulnerability, the XML library must allow the entity to define and invoke an entity, while in some libraries this property is explicit by default. Using this vulnerability, we can read files containing sensitive information.&lt;/p&gt;
+
+&lt;p&gt;Example 1:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-01-10/01.png&quot; alt=&quot;XXE Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We have a simple Login page as above. I started the review using the Burp Suite.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-01-10/02.png&quot; alt=&quot;XXE Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve tried to send a “test” between the tags, and it turns me into a hash encoded with base64 as the X-Auth-Policy (Authentication Policy).&lt;/p&gt;
+
+&lt;p&gt;When I decode this hash:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-01-10/03.png&quot; alt=&quot;XXE Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After decoding Hash, we see plain-text de storage: secret.txt, path: / main directory, principal: token (The contents of the secret.txt file are token)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-01-10/04.png&quot; alt=&quot;XXE Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When we go to the secret.txt file in the main directory, “Congratulations, You Hacked Me !!!” We see the text.&lt;/p&gt;
+
+&lt;p&gt;Example 2:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-01-10/05.png&quot; alt=&quot;XXE Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first thing we will do is log in to the burp suite by clicking on the forgot pwd, which is the part of the weakness from the login page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-01-10/06.png&quot; alt=&quot;XXE Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At the &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE Test [&amp;lt;!ENTITY test “EsraNSoylu”&amp;gt;&lt;/span&gt;]&amp;gt;&lt;/code&gt; payload we determine the experiment variable and we want to print a string named EsraNSoylu. We inject our payload, and when we look at Response, we see that the XML parser parses what we send and suppresses the EsraNSoylu string. This indicates that the XXE injection deficiency exists and no measures have been taken.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2019-01-10/07.png&quot; alt=&quot;XXE Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;How to protect us from this vulnerability ?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The safest way is to completely deactivate DTD (Document Type Definition) in Java with similar method depending on the parser.&lt;/li&gt;
+  &lt;li&gt;In PHP you can disable libxml extensions.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 10 Jan 2019 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/xxe-injection.html</link>
+        <guid isPermaLink="true">http://localhost:4000/xxe-injection.html</guid>
+        
+        
+        <category>xxe</category>
+        
+      </item>
+    
+      <item>
+        <title>D0Not5top VM</title>
+        <description>&lt;p&gt;Attacker’S IP: 192.168.52.135/ 192.168.207.175
+Victim’s IP: 192.168.52.136/ 192.168.207.171&lt;/p&gt;
+
+&lt;p&gt;If you just learn which machine is host up, you can use -Pn parameter in nmap.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/01.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/02.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s see web site:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/03.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;smtp&quot;&gt;SMTP&lt;/h2&gt;
+
+&lt;p&gt;SMTP(Simple Mail Transfer Protocol), is a TCP/IP protocol used in sending and receiving e-mail. Mail can be sent via SMTP, SMTP traffic can be listened to, the name and domain of the server can be detected, current users can be detected.&lt;/p&gt;
+
+&lt;p&gt;The SMTP Enumeration module will connect to a given mail server and use a wordlist to enumerate users that are present on the remote system.&lt;/p&gt;
+
+&lt;p&gt;And using metasploitable:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/04.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We found a lot of users. Also doing a banner grab on the smtp port gives us an interesting string. So Decoding with xxd gives us another flag!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/05.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And I’m looking at the paths included in the site:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/06.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/07.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I saw two paths.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;http://192.168.207.171/control/hosts.txt&lt;/li&gt;
+  &lt;li&gt;http://192.168.207.171/control/index.php&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/08.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/09.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;When I look source code index.php:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/10.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Okey, I have another flag. So I continue to look at the path of the dirb result.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/11.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have another flag decoder with binary. FL46_2:39331r42q2svdfsxk9i13ry4f2srtr98h2
+Also I saw a note. Seems like there is a virtual host so i added d0not5topme.ctf to my /etc/hosts.
+It gave me register form Board Administrator link. I clicked Register and select to “I do not agree to these terms”.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/12.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I used burp as a proxy and in the register.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/13.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So I saw FLaR6yF1nD3rZ_html. And I tried to go this path: http://d0not5topme.ctf/FLaR6yF1nD3rZ_html.
+This path give me text that brainfuck encoder. And I decoded:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-27/14.png&quot; alt=&quot;D0Not5top VM&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have another flag.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Nov 2018 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/d0not5top-vm.html</link>
+        <guid isPermaLink="true">http://localhost:4000/d0not5top-vm.html</guid>
+        
+        
+        <category>CTF</category>
+        
+      </item>
+    
+      <item>
+        <title>OWASP TOP 10 Zafiyetleri Ve Sızma Yöntemeleri</title>
+        <description>&lt;h2 id=&quot;1-sql-injection&quot;&gt;1. SQL Injection&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/sql-01.png&quot; alt=&quot;SQL Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;İlk başta normal kullanıcı gibi giriş yapmayı deniyorum. Ve doğal olarak siteye herhangi bir kayıdım olmadığı için giriş yapamıyorum. Ancak benim amacım zaten siteye giriş yapmak değildi. Benim amacım bana hata mesajını gönderirken bilgilerimi ekrana yazdırıp yazdırmadığını kontrol etmekti. Ve yukarıda ki ekranda da görüldüğü gibi Result for “esranur”, 0 records found şeklinde dönüş aldım. Yani bu demek oluyor ki sitede açık olabilir eğer sistemde zararlı karakterler filtrelenmiyorsa istediğim her bilgiyi ekrana bastırmayı deneyebilirim.&lt;/p&gt;
+
+&lt;p&gt;Bu işlemden sonra yeni bir account oluşturdum. Name: esranur Password: passwrd olacak şekilde bilgilerimi veri tabanına yollatarak bir hesap açmış oldum.&lt;/p&gt;
+
+&lt;p&gt;Web uygulamalarında birçok işlem için kullanıcıdan alınan veri ile dinamik SQL cümlecikleri oluşturulur. Örneğin; “SELECT * FROM Products* örnek SQL cümleciği basit şekilde veri tabanından web uygulamasına doğru tüm ürünleri döndürücektir. Bu SQL cümlecikleri oluştururken araya sıkıştırılan herhangi bir meta-karakter SQL Injection’a neden olabilir.&lt;/p&gt;
+
+&lt;p&gt;Giriş sayfasına SQL Injection açıkları denerken farkı veritabanlarına ait özel karakterler ile giriş yaptım. Bu veritabanları MySQL , Oracle SQL ve diğer popüler veritabanları olabilir. Örnek verirsem çoğu veritabanı / veya * kullanrak yorum satırı eklemeyi kullanır. Bunun gibi özel karakterler deniyorum.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/sql-02.png&quot; alt=&quot;SQL Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Genelde SQL Injection yapılırken kullanılan özel karakter resimde görüldüğü gibi tırnak karakteridir. Ve beklediğimiz gibi hata mesajı aldık .&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/sql-03.png&quot; alt=&quot;SQL Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bu hata mesajı bize yol göstericidir. Yani bize veritabanı olarak hangi SQL türü kullandığını söylüyor:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;opt/lampp/htdocs/mutillidae/classes/MySQLHandler.php&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Kullanılan veritabanının MySQL veritabanı olduğunu öğrenmiş olduk. Ve aynı zamanda hangi SQL sorgusunu çalıştıracağımızı bize söylemiş oldu.Yani bu demektir ki SQL Injection’a ait herhangi bir kontrol içermemektedir.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/sql-04.png&quot; alt=&quot;SQL Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Burada biraz SQL bilgisine girmek istiyorum.Tırnak olayından bahsetmiştim. 15=15 eşitliği her zaman doğru bir ifade olacağı için her türlü true değeri dönecektir. Ve araya koyulan OR işareti ise sorgu da bu koşullardan biri sağlandığında sorgunun yapılması gerekmesini sağlar. Yani kısaca burada manuel olarak elle denemeler yaparak veritabanında ki tüm verileri çekmeye çalıştım.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/sql-05.png&quot; alt=&quot;SQL Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Burada beklemediğim bir sonuç aldım. Hata kısmında username kısmında sadece tırnak kalması gerekmekteydi.Yani o zaman sorgunun çalıştığını anlardım…&lt;/p&gt;
+
+&lt;p&gt;Dikkat edecek olursak bana dönen SQL Hatası şu şekildedir:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT * FROM accounts WHERE username=’esranur’ AND password=’passwrd’&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Bu sorgu bize çok şeyi anlatmaktadır.Aslında sorgular çok basit bir mantık içinde çalışmaktadır.Eğer çalışan sorgunun sonucu TRUE ise bize girdiğimiz user’a ait bilgileri döndürecektir. Bu sorguda kullanıcısı esranur olan ve şifresi passwrd olan kullanıcı var ise bana sonucu döndür. O halde biz bu sorguyu kolay bir şekilde değiştirebiliriz.&lt;/p&gt;
+
+&lt;p&gt;Bizim türeteceğimiz sorgu şu şekilde olacaktır:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SELECT * FROM accounts WHERE (username=’’ AND password=’’) OR 1=’1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Şimdi sorgumuzu inceleyecek olursak username ve şifre kısmını belirli bir kişiye ait kılmadan bir sorgu gerçekleştirmek istedim. Bunların değerlerini boş verdiğim için bu kısmı atlayacaktır ve diğer koşula bakacaktır. Burada OR komutunu görünce diğer koşulu inceleyecektir ve eğer o sorgu doğruysa o zaman bize tüm sonuçları getirecektir. Ve her zaman 1=1’dır. Yani sorgumuz TRUE döndürecektir.&lt;/p&gt;
+
+&lt;p&gt;O zaman deneylim.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;‘&lt;/code&gt; koyarak başlıyoruz çünkü biliyoruz ki password kısmını kapatmamızı sağlayacaktır. Böylece herhangib bir hata almadan kesme işareti dışındakiler okunacaktır. Yani input girişimiz:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;‘ OR 1=’1&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Ve bize dönen sonuç çalıştı:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/sql-06.png&quot; alt=&quot;SQL Injection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Peki acaba Username=john olan ve Password=monkey olan bir kullanıcı oluştursam ve girişi yapsam acaba bana databesa içeriğindeki tüm benzer içerikleri getirecek mi diye baktığımda cevabı evet oldu. Bu demek oluyor ki Application Uniqueness kontrolü yapmıyor. Yani database kısmında Unique Key tutulmamaktadır. Herhangi bir John maymun sevip bunu şifresi olarak koyabilirdi bu yüzden aslında aynı değerlerle giriş yapmaları çok da imkansız bir şey değildir. Eğer username mail ile bağdaştırılmış olsaydı o zaman Unique bir şekilde bilgiler gelebilirdi.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-broken-authentication-and-session-management&quot;&gt;2. Broken Authentication And Session Management&lt;/h2&gt;
+
+&lt;p&gt;Bu uygulamadaki amaç ise sisteme giriş yapmak için kullanıcı adı ve parola girişi gerçekleştirmeden sistemde oturum açmaktır.&lt;/p&gt;
+
+&lt;p&gt;Kullanacağım payload sayesinde istenilen kullanıcı adı ve parola yazılmasına gerek yoktur. Burada öncelikle sql açığı olup olmadığını anlamak için tek tırnak işareti kullanacağım. Eğer açık var ise saldırgana veritabanı hatası verecektir bu sayede kullanılan MYSQL veritabanını öğrenmiş olacaktır. Payloadımız X’ or 3 = 3 # şeklinde olacaktır. Burada amacımız ilk doğrulamayı atlasa bile ikinci doğrulama doğru olacağından dolayı doğru dönecektir. “#” işareti ise kendinden sonra gelen ifadeleri yorum kabul etmeye yarar. Saldırgan bu şekilde sisteme girecektir.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/broken-01.png&quot; alt=&quot;Broken Authentication And Session Management&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sonuç olarak admin yetkisinde sisteme girmiş olduk:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/broken-02.jpg&quot; alt=&quot;Broken Authentication And Session Management&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3-cross-site-scripting-xss&quot;&gt;3. Cross Site Scripting (XSS)&lt;/h2&gt;
+
+&lt;p&gt;İlk olarak input kısmında herhangi bir kontrol olup olmadığına bakıyorum.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/xss-01.png&quot; alt=&quot;Cross Site Scripting XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ve görüldüğü gibi herhangi bir kontrol yapmadan sonucu bana döndürmeye çalıştı.
+Kaynak kodlarına baktığımda ise script kısımlarını aramaya başlıyorum:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/xss-02.jpg&quot; alt=&quot;Cross Site Scripting XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Web Server Javascript vasıtasıyla aslında wb browserıalıştırıyor ve bilgisayar web browser’ı işlem için çalıştırıyor. Burada iki önemli bileşen var. Server-side ve browser-side.
+İlk scriptimizi çalıştırmayı deneylim.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/xss-03.png&quot; alt=&quot;Cross Site Scripting XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Aldığımız sonuç:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/xss-04.png&quot; alt=&quot;Cross Site Scripting XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Demek ki ben istediğim herhangi bir script biçimini input kısmına girebilirim.Basit bir deneme ile sadece script’in çalışıp çalışmadığını kontrol ettik.Şimdi ise Cookie değerlerini döndürmek istiyorum.Bunun için input kısmına:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;alert(document.cookie)&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;ifadesini giriyoruz.Ve sonuç olarak ise gelen ekranımız şu şekildedir:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/xss-05.png&quot; alt=&quot;Cross Site Scripting XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Şuan da görüldüğü gibi PHP session ID değerine sahibim.PHP , server-side taraflı bir bileşendi.Server-side dinamik olarak değşebilen bir yapıya sahiptir.Çldığımız cookie’yi kendi cookie’mizin yerine yazıp kaydedebiliriz ve sayfayı yenilediğimizde aslında çalmış olduğumuz cooki değerini kendi cookie değerimiz gibi gösterebiliriz.&lt;/p&gt;
+
+&lt;p&gt;Server-side tarafı daha tehlikelidir. Ben kurbana phising saldırısı ile link yolladığımda ve ona tıkladığında giriş yaptığı tüm cookie değerlerini elde edebilirim.Yani bu script’i backdoor ile çalıştırıp o an da her ne yapıyorsa giriş değerlerini okuyabilirim. Buna kredi kartı bilgileri de dahil.&lt;/p&gt;
+
+&lt;p&gt;Peki şimdi ikinci aşamaya geçebiliriz. Blog kısmı için input alan sayfada html taglarının kontrol ediliğ edilmediklerine bakmakla başlayalım. Ben &amp;lt;hr&amp;gt; komutunu kullanarak yazımın altına düz çizgi çekip çekmediğine bakacağım :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/xss-06.png&quot; alt=&quot;Cross Site Scripting XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Evet sonuca bakacak olursak istediğimiz sonucu döndürmüş olduk.Yani bu demektir ki herhangi bir tag kullanmama izin veriliyor.&lt;/p&gt;
+
+&lt;p&gt;Yapılabileceklerden bir tanesi de sayfa içinden sayfaya yönlendirme yaptırabiliriz.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;iframe src=”https://www.apachefriends.org/tr/index.html”&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;ifadesi ile Databese içerisine başka bir web site gömdüm:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/xss-07.png&quot; alt=&quot;Cross Site Scripting XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bu yaptığımız şuan da zararıs bir site gömmeydi.Ancak elimde malicious bir domain olsaydı bunun sonuçları çok daha farklı olurdu. Login ve password girişli bir site bile olmuş olsa bu bir zafiyettir.Çünkü kullanıcının yaptığı hareketleri gözlemleyebilirim.&lt;/p&gt;
+
+&lt;p&gt;Bu sefer direk olarak yeni bir window açmaya yönelik direkt bir kod çalıştırmak için ise bu script kullanılabilir.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;script&amp;gt;window.location = “www.google.com”; &amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-broken-access-control-kırık-erişim-kontrolü&quot;&gt;4. Broken Access Control (Kırık Erişim Kontrolü)&lt;/h2&gt;
+
+&lt;p&gt;Bu yıl OWASP listesine Broken Access Control zafiyetini eklemiştir. OWASP 2013 listesinde yer alan “Insecure Direct Object References” ve “Missing Functional Level Access Control” zafiyetlerinin birleştirilmiş halidir. Bu zafiyet kullanıcı yetkileri ile alakalıdır.&lt;/p&gt;
+
+&lt;h2 id=&quot;5-security-misconfigurationgüvenlik-yanlış-yapılandırma&quot;&gt;5. Security Misconfiguration(Güvenlik Yanlış Yapılandırma)&lt;/h2&gt;
+
+&lt;p&gt;Güvenlik ile ilgili tanımların(örnek olarak şifreleme) zayıf,yanlış veya varsayılan olarak bırakılmasından kaynaklı saldırılardır. Genelde sayfalarda robots.txt kısmı varsayılan olarak bırakıldığı için buradan saldırgan kritik bilgilere ulaşabilir.&lt;/p&gt;
+
+&lt;h2 id=&quot;6-sensitive-data-exposure&quot;&gt;6. Sensitive Data Exposure&lt;/h2&gt;
+
+&lt;p&gt;Verilerin açık/okunabilir olarak depolanması saldırganların kolayca erişip kullanabilmesine olanak sağlar. Saldırganlar genellikle direkt olarak kriptolu veriyi kırmaya çalışmazlar. Sunuculardan, müşterilerin tarayıcılarından veya taşınan verileri çalmak, aradaki adam saldırısı(man-in-the-middle attack) yapmak veya anahtarları çalmak gibi yolları kullanırlar.&lt;/p&gt;
+
+&lt;p&gt;Robots.txt dosyası sitenizin kök dizininde bulunur.Yani bir arama motoru sitenizi indekslemeye çalıştığında ilk yaptığı şey sitenizin kök dizininde bu dosyayı aramakolacaktır. Bu dosya mevcut ise sitenizde izin verdiğiniz kısımları gezmeye başlarlar. Eğer bu dosya mevcut değilse sitenizin tamamını taraması gerektiğini düşüneceğinden her yerini indeksler.&lt;/p&gt;
+
+&lt;p&gt;Robots.txt dosyası bazen güvenlik zafiyeti oluşturabilir. Bunun nedeni ise sitenizin güvenlik açısından sorun oluşturabilecek dizinlerini burada kaydetmiş oluyorsunuz.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/data-exposure-01.png&quot; alt=&quot;Cross Site Scripting XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Resimde görüldüğü gibi bir sürü dosya yolunu görebildik. Buradan gözüme en kritik olan passwords klasörüne gitmek istiyorum.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/data-exposure-02.png&quot; alt=&quot;Cross Site Scripting XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ve görüldüğü gibi accounts.txt şeklinde bir text dökümanı gördüm.Bunun da içerisine girdiğimde ise :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-11-01/data-exposure-03.png&quot; alt=&quot;Cross Site Scripting XSS&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;7-insufficient-attack-protection&quot;&gt;7. Insufficient Attack Protection&lt;/h2&gt;
+
+&lt;h2 id=&quot;8-cross-site-request-forgery-csrf--siteler-ötesi-i̇stek-sahteciliği&quot;&gt;8. Cross Site Request Forgery (CSRF) – Siteler Ötesi İstek Sahteciliği&lt;/h2&gt;
+
+&lt;p&gt;Günümüzde kodlayıcının,kodlama bilgisi yetersizliğinden kaynaklanan bir güvenlik zafiyetidir. Site yetkilisinin haberi olmaksızın güvenlik açığını istismar ederek çalışır. Saldırganın herhangi bir web sayfasına yerleştirdiği Js veya Html kodlarıyla yetkilinin oturum bilgilerini çalma olayıdır. Bu olayda önemli olan,saldırganın kurban için kodladığı web sayfasını kurbanın açmasıdır. Kurban web sayfasını açtığı takdirde, session(Oturum) bilgileri saniyeler içerisinde kurbana fark ettirmeden değiştirilebilir.&lt;/p&gt;
+
+&lt;p&gt;Önemli: XSS (Cross Site Scripting) ile CSRF(Cross Site Request Forgery) aynı şey değildir..XSS yetkiliyle ilgilenmez,yani bire bir herhangi bir hedef yoktur.Sistemdeki zafiyet,bire bir herhangi birini oltaya getirmeye gerek kalmaksızın sömürülebilir.Ancak CSRF zafiyetinde bire bir,sistemde yetkili bir hedef bulmak gereklidir.&lt;/p&gt;
+
+&lt;p&gt;Bu açığı önlemek için Get yerine Post modülü kullanılmalıdır ve Captcha kullanmaya özen gösterilmelidir.&lt;/p&gt;
+
+&lt;h2 id=&quot;9-using-components-with-known-vulnerabilities&quot;&gt;9. Using Components With Known Vulnerabilities&lt;/h2&gt;
+
+&lt;h2 id=&quot;10-underprotected-apis&quot;&gt;10. Underprotected APIs&lt;/h2&gt;
+</description>
+        <pubDate>Thu, 01 Nov 2018 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/owasp-top-10-zafiyetleri-ve-sizma-yontemleri.html</link>
+        <guid isPermaLink="true">http://localhost:4000/owasp-top-10-zafiyetleri-ve-sizma-yontemleri.html</guid>
+        
+        
+        <category>owasp,</category>
+        
+        <category>top</category>
+        
+        <category>10,</category>
+        
+        <category>zafiyet,</category>
+        
+        <category>sızma</category>
+        
+      </item>
+    
+      <item>
+        <title>Japanese Lesson 2</title>
+        <description>&lt;h2 id=&quot;me-you-himher-and-jobs&quot;&gt;Me, You, Him/Her and Jobs&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-jobs&quot;&gt;1. Jobs&lt;/h3&gt;
+
+&lt;p&gt;We use the same pattern we use to introduce ourselves:
+Watashi wa … desu.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Gakusei (Student)&lt;/li&gt;
+  &lt;li&gt;Sensei/Kyoshi (Teacher)&lt;/li&gt;
+  &lt;li&gt;Kaishain (Employee, you hear a lot of this word because it covers too much.)&lt;/li&gt;
+  &lt;li&gt;İsha (Doctor)&lt;/li&gt;
+  &lt;li&gt;Kangofu (Nurse)&lt;/li&gt;
+  &lt;li&gt;Enjinia (Engineer)&lt;/li&gt;
+  &lt;li&gt;Bengoshi (Lawyer)&lt;/li&gt;
+  &lt;li&gt;Kutsuya (Shoemaker, it is enough to bring the “ya” attachment to the end of the word.)&lt;/li&gt;
+  &lt;li&gt;Meganeya (Optician)&lt;/li&gt;
+  &lt;li&gt;Yaoya (Greengrocer)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-personal-pronouns&quot;&gt;2. Personal pronouns&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Watashi -&amp;gt; Me&lt;/li&gt;
+  &lt;li&gt;Anata -&amp;gt; You&lt;/li&gt;
+  &lt;li&gt;Kare -&amp;gt; Him&lt;/li&gt;
+  &lt;li&gt;Kanojo -&amp;gt; Her&lt;/li&gt;
+  &lt;li&gt;Watashitachi -&amp;gt; We&lt;/li&gt;
+  &lt;li&gt;Anatatachi -&amp;gt; They&lt;/li&gt;
+  &lt;li&gt;Karera -&amp;gt; They (men)&lt;/li&gt;
+  &lt;li&gt;Kanojotachi -&amp;gt; They (girls)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;End of name attachments:&lt;/p&gt;
+
+&lt;p&gt;…san -&amp;gt; for older people
+…chan -&amp;gt; for little girl
+…kun -&amp;gt; for little boy
+But the use of spoken language in japan may not be exactly this way, irrespective of age. For Example:&lt;/p&gt;
+
+&lt;p&gt;…san -&amp;gt; friendly female friends talking
+…kun -&amp;gt; friendly male friends talking&lt;/p&gt;
+</description>
+        <pubDate>Sun, 21 Oct 2018 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/japanese-lesson-2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/japanese-lesson-2.html</guid>
+        
+        
+        <category>japanese,</category>
+        
+        <category>lesson</category>
+        
+      </item>
+    
+      <item>
+        <title>Japanese Lesson 1</title>
+        <description>&lt;h2 id=&quot;introduce-yourself&quot;&gt;Introduce Yourself&lt;/h2&gt;
+
+&lt;p&gt;A: Hajimemashite. Watashi wa Esra desu.
+B: Hajimemashite. Watashi wa … desu.
+A: Douzo, Yoroshiku onegai shimasu.&lt;/p&gt;
+
+&lt;p&gt;You see a simple introduction dialogue above. The word “Douzo” makes the sentence even more gentle.
+We entered the environment and saw our friend. If we want to introduce him/her to the person we just introduced. The template we use:
+Kochira wa …san desu.&lt;/p&gt;
+
+&lt;p&gt;Salute Shapes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;For Morning: Ohayo Gozaimasu&lt;/li&gt;
+  &lt;li&gt;For Afternoon: Konnichiwa&lt;/li&gt;
+  &lt;li&gt;For Evening: Konbanwa&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Goodbye Shapes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sayonara&lt;/li&gt;
+  &lt;li&gt;Dewa Mata&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 21 Oct 2018 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/japanese-lesson-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/japanese-lesson-1.html</guid>
+        
+        
+        <category>japanese,</category>
+        
+        <category>lesson</category>
+        
+      </item>
+    
+      <item>
+        <title>Adli Bilişim Nedir?</title>
+        <description>&lt;h2 id=&quot;adli-bilişim-nedir&quot;&gt;Adli Bilişim Nedir?&lt;/h2&gt;
+
+&lt;p&gt;Adli bilişim, bilişim sistemleri üzerinden genellikle veri olarak elde edilen delillerin toplanaması , saklanması , derlenmesi ve analizi konusunda çalışan bir bilim dalıdır. Bu alanda çalışırken adli bilişim uzmanının tabiri caizse şeytanın aklına gelecek detayların ve senaryoların üretilmesi gerekmektedir. Peki ne gibi şeylerle uğraşırlar ? Network forensics , Disk forensics , Mobile forensics , Memory forensics vs gibi … Bu yazımda daha çok disk forensics üstünde durmayı planlıyorum. Bu konular dışında bir adli bilişim uzmanının hukuki süreçler konusunda bilgili olmalı. Mesela ACR gibi bir uygulamayla kişi konuşmalarını ses kaydı altına aldığında ve bunu delil olarak sunmaya kalkıştığında mahkemede geçersiz olabiliyor. Ya da twitter’dan ekran görüntüsü aldığınızda bunu delil olarak nitelendirdiğinizde de aynı şekilde. Çünkü kişi html kodlarını değiştirip bunu iftira durumuna da dönüştürebilir.&lt;/p&gt;
+
+&lt;p&gt;Biraz daha teknik kısmına gelecek olursak , adli delil olarak bir sabit diskin imajını alırken iki yolumuz vardır: Fiziksel İmaj ve Mantıksal İmaj. Fiziksel imaj dediğimiz diskin tamamının kopyalanmasıdır. Mantıksal imajsa sabit diskin tamamının değil sadece bazı bölümlerinin imajının alınmasıdır. RAID sürücülerin veya şifrelenmiş sürücülerin imajlarının alınmasında mantıksal imaj almak önerilir.&lt;/p&gt;
+
+&lt;h2 id=&quot;disk-forensics&quot;&gt;Disk Forensics&lt;/h2&gt;
+
+&lt;p&gt;Delil olarak nitelendirilen disk üzerinden silinmiş dosyaların geri getirilmesi veya gizlenmiş, bozulmuş önemli dosyaların kurtarılması işlemini içerir. Bunun disk yapısı çok iyi bilinmelidir.&lt;/p&gt;
+
+&lt;p&gt;Bilgisayardan herhangi bir dosyayı sildiğinizde, sabit disk üzerinde silinen dosya için ayrılan alan yeni veri ile doldurulamazsa o veri kalıcı olarak silinmemiş demektir. Siz sildiğinizi sanarsınız ancak bir adli bilişim uzmanı çok uzun süre geçmesine rağmen o dosyanıza ulaşabilir. SSD(Solid State DRİVE -Katı Hal Sürücüler)’lerde durum biraz daha farklıdır.SSD’lerde veriler bloklar halinde saklanır. Yani bloğun silinmesi ile bloğun içeriği ön belleğe kayıt edilir, blok içeriğinin silinmesi ile ön belleğin üzerine yazılan bloğu siler, yeni veriyi ön belleğe yazar ve bloğu yeni veri ile yapılandırır.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-10-18/01.jpg&quot; alt=&quot;Adli Bilişim&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Diskte bilginin tutulduğu alanlar Platter olarak adlandırılır. Günümüzde bir diskte 3 yada 4 tane platter bulunur. Platterlar gözle görünemeyen tracker(iz) sahiptir.&lt;/p&gt;
+
+&lt;p&gt;Harddisk ham haldeyken hangi bilginin nerede olduğunu anlamak için CHS(Cylinder Head Sector) kullanırız. CHS açılımından da görebileceğimiz gibi böylece bilginin hangi plakta, alt/üst yüzeylerden hangisinde olduğunu, kaçıncı sektörde olduğunu bilebiliriz.&lt;/p&gt;
+
+&lt;p&gt;Her bir sektör 512 Byte(A5 kağıdının yarısı kadar bilgi) alan işgal eder. Yani siz 1 GB boyutunda bir film izlemeye çalıştığınızda harddisk yaklaşık 1 milyon tane sektöre yazma işlemi yapar. Bununla baş etmek için dosya sistemleri gruplama yöntemini kullanmışlardır. 10 sektörü 1 grup içine alarak bunun adına da Cluster denmiştir.&lt;/p&gt;
+
+&lt;p&gt;USB taktığınız zaman size 64 sektörü(16 GB) bir araya getirerek 1 cluster oluşturur. Ve veriler buraya yazılır. Bu arada 1 cluster içerisine aynı anda birden fazla dosya yazılamaz.&lt;/p&gt;
+
+&lt;p&gt;Bir word dökümanı 10 KB civarındadır. Elimizde 32 KB boyutunda bir cluster olduğunu varsayalım. Geriye kalan 22 KB boş alan olarak kalır. Bu boş alanlar birleştiği zaman aslında diskin yarısının boşta olduğunu görebiliriz. Yani elimizde bulunan 500 GB boyutunda hard diskin 250 veya 300 GB boyutunu kullandığımızı söyleyebiliriz.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Diskin üzerine herhangi bir veri yazılmadıysa o veri kurtarılabilir!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Hard diskler 5400 RPM,7200 RPM ve 10000 RPM ile çalışabilir. Bunun anlamı şudur hard disk üzerindeki okuyucu kafanın disk üzerinde ne kadar hızlı gidip geldiğini ifade eder.&lt;/p&gt;
+
+&lt;p&gt;Bilgisayarınızı açtığınızda ilk olarak güç aldığında bu BIOS tarafına iletilir. BIOS ise ilk sinyalini hard diske iletir. Ve bu gelen sinyal sürekli ilk olarak aynı noktaya gelmek zorundadır. Bu noktaya MDR(Master Boot Record) denir. Sıfırıncı sektör de diyebiliriz. MBR bilgisayar için çok önemli bir kısımdır.Çünkü içerisinde partition bilgisini, işletim sistemi bilgisini ve işlemlerin çalışma sıraları vs bilgileri bulundurur.&lt;/p&gt;
+
+&lt;p&gt;En bilindik hard disk modelleri -&amp;gt; Western Digital, Samsung, Seagate.&lt;/p&gt;
+
+&lt;h2 id=&quot;dosya-yapıları&quot;&gt;Dosya Yapıları&lt;/h2&gt;
+
+&lt;p&gt;Windows sistemleri genelde FAT ve NTFS dosya sistemi ile çalışır. Mac ise HFPS ile çalışır.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-10-18/02.jpg&quot; alt=&quot;Adli Bilişim&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;FAT (File Allocation Table) dosya sisteminde Directory Entry’de hangi datanın hangi cluster da olduğunu tutar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-10-18/03.jpg&quot; alt=&quot;Adli Bilişim&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Defragment: 45. Cluster’ı 42. Cluster’a getirip dosyaya hızlı ulaşmamızı sağlar. Parçalanmış büyük dosyaları mümkün olduğu kadar birbirine yakın tutmaya yarar.
+Özetlemek gerekirse bizim için üç tane önemli kısım vardır.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Data&lt;/li&gt;
+  &lt;li&gt;Directory Entry&lt;/li&gt;
+  &lt;li&gt;FAT Table&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;İki senaryo hazırlayalım ve adli bilişim uzmanı gözünden bakalım:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Data Alanı ve Directory Entry alanına ulaşabildiğimizi ancak FAT Tablosuna ulaşamadığımız durum olursa dosyayı kurtarabiliriz.&lt;/li&gt;
+  &lt;li&gt;Data Alanı ve FAT Tablosuna ulaşabildiğimizi ancak Directory Entry alanına ulaşamadığımızı düşünürsek ise sadece dosya ismini kurtaramayız ama datayı elde edebiliriz.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Olay yerinden elimize bir usb getirildiğini varsayarsak yapmamız gerekenleri anlatmak gerekirse ilk olarak usb imajını alarak gerçek usb dokunmamamız gerekmektedir.&lt;/p&gt;
+
+&lt;p&gt;Yazma koruma cihazımıza USB takıldıktan sonra bilgisayara bağlanır. Bunun nedeni bilgisayarın register kısmı USB’yi algıladığı zaman otomatikmen kod yükleme çalışır ki uyumlu olarak çalışabilmesi için. Ancak bu bizim istemediğimiz bir şeydir çünkü USB’nin orjinal halini bozarız ve elimizde hash değerini değiştirmiş oluruz. Bu yüzden kesinlikle USB cihazını direk olarak bilgisayara takmamalıyız. Ve ardından forensic cihazımızı(forensic tool,encase vb.) takıp kurtarma işlemine başlayabiliriz.&lt;/p&gt;
+
+&lt;p&gt;Alınan imajlar Raw, AFF ve E01 foramtında olabilir.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-10-18/04.gif&quot; alt=&quot;Adli Bilişim&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bir disk yapısına bakacak olursak;&lt;/p&gt;
+
+&lt;h4 id=&quot;kullanıcı-tarafından-adreslenebilir-kısımlar&quot;&gt;Kullanıcı tarafından adreslenebilir kısımlar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;HPA(Host Protected Area):&lt;/strong&gt; İşletim sistemi tarafından görülmeyen ve işletim sisteminden gizlenmiş bir sabit disk alanıdır. Donanım üreticileri tarafından ilgili cihaza ait kurulum ve sürücü dosyalarını saklamak için kullanılır.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;DCO(Device Configuration Overlay):&lt;/strong&gt; BIOS, işletim sistemi veya kullanıcı tarafından erişilemez.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Eğer kullanıcı tarafından adreslenebilir alan ile genel disk alanı arasında büyük bir boyut farkı varsa, HPA ve DCO alanları adli incelemeye alınmalıdır. Özellikle HPA alanın da alınacak imaj dosyası, adli tıp raporunda önemli bir yere sahiptir.&lt;/p&gt;
+
+&lt;p&gt;Bilgisayara takılan her usb cihaza ait detaylı bilgiler registry’de kayıtlı olarak tutulur.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../assets/images/2018-10-18/05.png&quot; alt=&quot;Adli Bilişim&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 18 Oct 2018 00:00:00 +0300</pubDate>
+        <link>http://localhost:4000/adli-bilisim-nedir.html</link>
+        <guid isPermaLink="true">http://localhost:4000/adli-bilisim-nedir.html</guid>
+        
+        
+        <category>adli,</category>
+        
+        <category>bilisim</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,9 +1,9 @@
 # Site settings
 title_left    : "Esra Nur"
-title_right   : "SOYLU" # default: ""
+title_right   : " SOYLU" # default: ""
 description   : "Cyber Security"
 keywords      : "pentester, purple teamer, csoc engineer, soc t2 analyst"
-url           : http://esrasoylu.com # site url
+url           : https://esrasoylu.com # site url
 baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
 cover         : "" # image uri like logo/cover image for site seo
 

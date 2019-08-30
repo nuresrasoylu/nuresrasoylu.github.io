@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Almanca
-permalink: /almanca/
+title: German
+permalink: /german/
 ---
 
 ## Das Alphabet

@@ -3,8 +3,8 @@
   <channel>
     <title></title>
     <description>Cyber Security</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://naoumine.com/</link>
+    <atom:link href="https://naoumine.com/feed.xml" rel="self" type="application/rss+xml"/>
     <pubDate>Thu, 18 Jul 2019 17:37:37 +0300</pubDate>
     <lastBuildDate>Thu, 18 Jul 2019 17:37:37 +0300</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
@@ -167,8 +167,8 @@ We can terminate the grep with a semicolon, run an arbitrary command, and commen
 &lt;p&gt;&lt;img src=&quot;../assets/images/2019-05-06/35.png&quot; alt=&quot;‘Natas’ Solutions 1-12&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 06 May 2019 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/natas-solutions-1-12.html</link>
-        <guid isPermaLink="true">http://localhost:4000/natas-solutions-1-12.html</guid>
+        <link>https://naoumine.com/natas-solutions-1-12.html</link>
+        <guid isPermaLink="true">https://naoumine.com/natas-solutions-1-12.html</guid>
         
         
         <category>natas,</category>
@@ -221,8 +221,8 @@ I opened the code with the UPX opener.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;kernel32.dll:&lt;/strong&gt; is a dll file where functions such as access, manipulation and manipulation of memory, files and hardware commonly used by malware and exploit codes are performed.&lt;/p&gt;
 </description>
         <pubDate>Wed, 06 Mar 2019 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/malware-analysis-of-trojan-try-to-hide-with-anti-reverse.html</link>
-        <guid isPermaLink="true">http://localhost:4000/malware-analysis-of-trojan-try-to-hide-with-anti-reverse.html</guid>
+        <link>https://naoumine.com/malware-analysis-of-trojan-try-to-hide-with-anti-reverse.html</link>
+        <guid isPermaLink="true">https://naoumine.com/malware-analysis-of-trojan-try-to-hide-with-anti-reverse.html</guid>
         
         
         <category>malware,</category>
@@ -274,8 +274,8 @@ I opened the code with the UPX opener.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;../assets/images/2019-03-05/08.png&quot; alt=&quot;Static Malware Analysis of NetBus Trojan&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Mar 2019 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/static-malware-analysis-of-netbus-trojan.html</link>
-        <guid isPermaLink="true">http://localhost:4000/static-malware-analysis-of-netbus-trojan.html</guid>
+        <link>https://naoumine.com/static-malware-analysis-of-netbus-trojan.html</link>
+        <guid isPermaLink="true">https://naoumine.com/static-malware-analysis-of-netbus-trojan.html</guid>
         
         
         <category>malware,</category>
@@ -317,8 +317,8 @@ I opened the code with the UPX opener.&lt;/p&gt;
 &lt;p&gt;SOC 2 Tip 2 uyumluluğu, müşterilerimize, bilgilerin güvenliğini sağlamak için sınıfının en iyisi koruma önlemlerine ve prosedürlerine sahip olduğumuzu garanti eder.&lt;/p&gt;
 </description>
         <pubDate>Mon, 21 Jan 2019 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/soc-2-type-2-sertifikasyonu.html</link>
-        <guid isPermaLink="true">http://localhost:4000/soc-2-type-2-sertifikasyonu.html</guid>
+        <link>https://naoumine.com/soc-2-type-2-sertifikasyonu.html</link>
+        <guid isPermaLink="true">https://naoumine.com/soc-2-type-2-sertifikasyonu.html</guid>
         
         
         <category>soc</category>
@@ -371,8 +371,8 @@ I opened the code with the UPX opener.&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Thu, 10 Jan 2019 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/xxe-injection.html</link>
-        <guid isPermaLink="true">http://localhost:4000/xxe-injection.html</guid>
+        <link>https://naoumine.com/xxe-injection.html</link>
+        <guid isPermaLink="true">https://naoumine.com/xxe-injection.html</guid>
         
         
         <category>xxe</category>
@@ -451,8 +451,8 @@ This path give me text that brainfuck encoder. And I decoded:&lt;/p&gt;
 &lt;p&gt;I have another flag.&lt;/p&gt;
 </description>
         <pubDate>Tue, 27 Nov 2018 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/d0not5top-vm.html</link>
-        <guid isPermaLink="true">http://localhost:4000/d0not5top-vm.html</guid>
+        <link>https://naoumine.com/d0not5top-vm.html</link>
+        <guid isPermaLink="true">https://naoumine.com/d0not5top-vm.html</guid>
         
         
         <category>CTF</category>
@@ -622,8 +622,8 @@ Kaynak kodlarına baktığımda ise script kısımlarını aramaya başlıyorum:
 &lt;h2 id=&quot;10-underprotected-apis&quot;&gt;10. Underprotected APIs&lt;/h2&gt;
 </description>
         <pubDate>Thu, 01 Nov 2018 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/owasp-top-10-zafiyetleri-ve-sizma-yontemleri.html</link>
-        <guid isPermaLink="true">http://localhost:4000/owasp-top-10-zafiyetleri-ve-sizma-yontemleri.html</guid>
+        <link>https://naoumine.com/owasp-top-10-zafiyetleri-ve-sizma-yontemleri.html</link>
+        <guid isPermaLink="true">https://naoumine.com/owasp-top-10-zafiyetleri-ve-sizma-yontemleri.html</guid>
         
         
         <category>owasp,</category>
@@ -684,8 +684,8 @@ But the use of spoken language in japan may not be exactly this way, irrespectiv
 …kun -&amp;gt; friendly male friends talking&lt;/p&gt;
 </description>
         <pubDate>Sun, 21 Oct 2018 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/japanese-lesson-2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/japanese-lesson-2.html</guid>
+        <link>https://naoumine.com/japanese-lesson-2.html</link>
+        <guid isPermaLink="true">https://naoumine.com/japanese-lesson-2.html</guid>
         
         
         <category>japanese,</category>
@@ -722,8 +722,8 @@ Kochira wa …san desu.&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 21 Oct 2018 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/japanese-lesson-1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/japanese-lesson-1.html</guid>
+        <link>https://naoumine.com/japanese-lesson-1.html</link>
+        <guid isPermaLink="true">https://naoumine.com/japanese-lesson-1.html</guid>
         
         
         <category>japanese,</category>
@@ -816,8 +816,8 @@ Kochira wa …san desu.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;../assets/images/2018-10-18/05.png&quot; alt=&quot;Adli Bilişim&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 18 Oct 2018 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/adli-bilisim-nedir.html</link>
-        <guid isPermaLink="true">http://localhost:4000/adli-bilisim-nedir.html</guid>
+        <link>https://naoumine.com/adli-bilisim-nedir.html</link>
+        <guid isPermaLink="true">https://naoumine.com/adli-bilisim-nedir.html</guid>
         
         
         <category>adli,</category>

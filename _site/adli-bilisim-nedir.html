@@ -1,1 +1,176 @@
-<!DOCTYPE html> <html> <head> <meta charset="utf-8"> <meta name="apple-mobile-web-app-capable" content="yes"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title> Adli Bilişim Nedir? | Esra NurSOYLU </title> <meta name="description" content=" Adli Bilişim Nedir? "> <meta name="keywords" content="pentester, purple teamer, csoc engineer, soc t2 analyst"> <meta name="HandheldFriendly" content="True"> <meta name="MobileOptimized" content="320"> <!-- Social: Facebook / Open Graph --> <meta property="og:type" content="article"> <meta property="article:author" content="Esra Nur SOYLU"> <meta property="article:section" content="adli,, bilisim"> <meta property="article:tag" content=""> <meta property="article:published_time" content="2018-10-18 00:00:00 +0300"> <meta property="og:url" content="http://localhost:4000/adli-bilisim-nedir.html"> <meta property="og:title" content=" Adli Bilişim Nedir? | Esra NurSOYLU "> <meta property="og:image" content="http://localhost:4000"> <meta property="og:description" content=" Adli Bilişim Nedir? "> <meta property="og:site_name" content="Esra Nur SOYLU"> <meta property="og:locale" content="en_US"> <!-- Social: Twitter --> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:site" content="naoumine"> <meta name="twitter:title" content=" Adli Bilişim Nedir? | Esra NurSOYLU "> <meta name="twitter:description" content=" Adli Bilişim Nedir? "> <meta name="twitter:image:src" content="http://localhost:4000"> <!-- Social: Google+ / Schema.org --> <meta itemprop="name" content=" Adli Bilişim Nedir? | Esra NurSOYLU "> <meta itemprop="description" content=" Adli Bilişim Nedir? "> <meta itemprop="image" content="http://localhost:4000"> <!-- Canonical link tag --> <link rel="canonical" href="http://localhost:4000/adli-bilisim-nedir.html"> <link rel="alternate" type="application/rss+xml" title="Esra NurSOYLU" href="http://localhost:4000/feed.xml"> <!-- rel prev and next --> <link rel="stylesheet" href="http://localhost:4000/assets/css/main.css"> <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico"> </head> <body> <main class="wrapper"> <header class="site-header"> <nav class="nav"> <div class="container"> <h1 class="logo"><a href="http://localhost:4000/">Esra Nur<span>SOYLU</span></a></h1> <ul class="navbar"> <li><a href="http://localhost:4000/about">WhoAmI</a></li> </ul> </div> </nav> </header> <article class="post container" itemscope itemtype="http://schema.org/BlogPosting"> <header class="post-header"> <p class="post-meta"><time datetime="2018-10-18T00:00:00+03:00" itemprop="datePublished">Oct 18, 2018</time></p> <h1 class="post-title" itemprop="name headline">Adli Bilişim Nedir?</h1> </header> <div class="post-content" itemprop="articleBody"> <h2 id="adli-bilişim-nedir">Adli Bilişim Nedir?</h2> <p>Adli bilişim, bilişim sistemleri üzerinden genellikle veri olarak elde edilen delillerin toplanaması , saklanması , derlenmesi ve analizi konusunda çalışan bir bilim dalıdır. Bu alanda çalışırken adli bilişim uzmanının tabiri caizse şeytanın aklına gelecek detayların ve senaryoların üretilmesi gerekmektedir. Peki ne gibi şeylerle uğraşırlar ? Network forensics , Disk forensics , Mobile forensics , Memory forensics vs gibi … Bu yazımda daha çok disk forensics üstünde durmayı planlıyorum. Bu konular dışında bir adli bilişim uzmanının hukuki süreçler konusunda bilgili olmalı. Mesela ACR gibi bir uygulamayla kişi konuşmalarını ses kaydı altına aldığında ve bunu delil olarak sunmaya kalkıştığında mahkemede geçersiz olabiliyor. Ya da twitter’dan ekran görüntüsü aldığınızda bunu delil olarak nitelendirdiğinizde de aynı şekilde. Çünkü kişi html kodlarını değiştirip bunu iftira durumuna da dönüştürebilir.</p> <p>Biraz daha teknik kısmına gelecek olursak , adli delil olarak bir sabit diskin imajını alırken iki yolumuz vardır: Fiziksel İmaj ve Mantıksal İmaj. Fiziksel imaj dediğimiz diskin tamamının kopyalanmasıdır. Mantıksal imajsa sabit diskin tamamının değil sadece bazı bölümlerinin imajının alınmasıdır. RAID sürücülerin veya şifrelenmiş sürücülerin imajlarının alınmasında mantıksal imaj almak önerilir.</p> <h2 id="disk-forensics">Disk Forensics</h2> <p>Delil olarak nitelendirilen disk üzerinden silinmiş dosyaların geri getirilmesi veya gizlenmiş, bozulmuş önemli dosyaların kurtarılması işlemini içerir. Bunun disk yapısı çok iyi bilinmelidir.</p> <p>Bilgisayardan herhangi bir dosyayı sildiğinizde, sabit disk üzerinde silinen dosya için ayrılan alan yeni veri ile doldurulamazsa o veri kalıcı olarak silinmemiş demektir. Siz sildiğinizi sanarsınız ancak bir adli bilişim uzmanı çok uzun süre geçmesine rağmen o dosyanıza ulaşabilir. SSD(Solid State DRİVE -Katı Hal Sürücüler)’lerde durum biraz daha farklıdır.SSD’lerde veriler bloklar halinde saklanır. Yani bloğun silinmesi ile bloğun içeriği ön belleğe kayıt edilir, blok içeriğinin silinmesi ile ön belleğin üzerine yazılan bloğu siler, yeni veriyi ön belleğe yazar ve bloğu yeni veri ile yapılandırır.</p> <p><img src="../assets/images/2018-10-18/01.jpg" alt="Adli Bilişim" /></p> <p>Diskte bilginin tutulduğu alanlar Platter olarak adlandırılır. Günümüzde bir diskte 3 yada 4 tane platter bulunur. Platterlar gözle görünemeyen tracker(iz) sahiptir.</p> <p>Harddisk ham haldeyken hangi bilginin nerede olduğunu anlamak için CHS(Cylinder Head Sector) kullanırız. CHS açılımından da görebileceğimiz gibi böylece bilginin hangi plakta, alt/üst yüzeylerden hangisinde olduğunu, kaçıncı sektörde olduğunu bilebiliriz.</p> <p>Her bir sektör 512 Byte(A5 kağıdının yarısı kadar bilgi) alan işgal eder. Yani siz 1 GB boyutunda bir film izlemeye çalıştığınızda harddisk yaklaşık 1 milyon tane sektöre yazma işlemi yapar. Bununla baş etmek için dosya sistemleri gruplama yöntemini kullanmışlardır. 10 sektörü 1 grup içine alarak bunun adına da Cluster denmiştir.</p> <p>USB taktığınız zaman size 64 sektörü(16 GB) bir araya getirerek 1 cluster oluşturur. Ve veriler buraya yazılır. Bu arada 1 cluster içerisine aynı anda birden fazla dosya yazılamaz.</p> <p>Bir word dökümanı 10 KB civarındadır. Elimizde 32 KB boyutunda bir cluster olduğunu varsayalım. Geriye kalan 22 KB boş alan olarak kalır. Bu boş alanlar birleştiği zaman aslında diskin yarısının boşta olduğunu görebiliriz. Yani elimizde bulunan 500 GB boyutunda hard diskin 250 veya 300 GB boyutunu kullandığımızı söyleyebiliriz.</p> <p><strong>Diskin üzerine herhangi bir veri yazılmadıysa o veri kurtarılabilir!</strong></p> <p>Hard diskler 5400 RPM,7200 RPM ve 10000 RPM ile çalışabilir. Bunun anlamı şudur hard disk üzerindeki okuyucu kafanın disk üzerinde ne kadar hızlı gidip geldiğini ifade eder.</p> <p>Bilgisayarınızı açtığınızda ilk olarak güç aldığında bu BIOS tarafına iletilir. BIOS ise ilk sinyalini hard diske iletir. Ve bu gelen sinyal sürekli ilk olarak aynı noktaya gelmek zorundadır. Bu noktaya MDR(Master Boot Record) denir. Sıfırıncı sektör de diyebiliriz. MBR bilgisayar için çok önemli bir kısımdır.Çünkü içerisinde partition bilgisini, işletim sistemi bilgisini ve işlemlerin çalışma sıraları vs bilgileri bulundurur.</p> <p>En bilindik hard disk modelleri -&gt; Western Digital, Samsung, Seagate.</p> <h2 id="dosya-yapıları">Dosya Yapıları</h2> <p>Windows sistemleri genelde FAT ve NTFS dosya sistemi ile çalışır. Mac ise HFPS ile çalışır.</p> <p><img src="../assets/images/2018-10-18/02.jpg" alt="Adli Bilişim" /></p> <p>FAT (File Allocation Table) dosya sisteminde Directory Entry’de hangi datanın hangi cluster da olduğunu tutar.</p> <p><img src="../assets/images/2018-10-18/03.jpg" alt="Adli Bilişim" /></p> <p>Defragment: 45. Cluster’ı 42. Cluster’a getirip dosyaya hızlı ulaşmamızı sağlar. Parçalanmış büyük dosyaları mümkün olduğu kadar birbirine yakın tutmaya yarar. Özetlemek gerekirse bizim için üç tane önemli kısım vardır.</p> <ul> <li>Data</li> <li>Directory Entry</li> <li>FAT Table</li> </ul> <p>İki senaryo hazırlayalım ve adli bilişim uzmanı gözünden bakalım:</p> <ul> <li>Data Alanı ve Directory Entry alanına ulaşabildiğimizi ancak FAT Tablosuna ulaşamadığımız durum olursa dosyayı kurtarabiliriz.</li> <li>Data Alanı ve FAT Tablosuna ulaşabildiğimizi ancak Directory Entry alanına ulaşamadığımızı düşünürsek ise sadece dosya ismini kurtaramayız ama datayı elde edebiliriz.</li> </ul> <p>Olay yerinden elimize bir usb getirildiğini varsayarsak yapmamız gerekenleri anlatmak gerekirse ilk olarak usb imajını alarak gerçek usb dokunmamamız gerekmektedir.</p> <p>Yazma koruma cihazımıza USB takıldıktan sonra bilgisayara bağlanır. Bunun nedeni bilgisayarın register kısmı USB’yi algıladığı zaman otomatikmen kod yükleme çalışır ki uyumlu olarak çalışabilmesi için. Ancak bu bizim istemediğimiz bir şeydir çünkü USB’nin orjinal halini bozarız ve elimizde hash değerini değiştirmiş oluruz. Bu yüzden kesinlikle USB cihazını direk olarak bilgisayara takmamalıyız. Ve ardından forensic cihazımızı(forensic tool,encase vb.) takıp kurtarma işlemine başlayabiliriz.</p> <p>Alınan imajlar Raw, AFF ve E01 foramtında olabilir.</p> <p><img src="../assets/images/2018-10-18/04.gif" alt="Adli Bilişim" /></p> <p>Bir disk yapısına bakacak olursak;</p> <h4 id="kullanıcı-tarafından-adreslenebilir-kısımlar">Kullanıcı tarafından adreslenebilir kısımlar</h4> <ul> <li><strong>HPA(Host Protected Area):</strong> İşletim sistemi tarafından görülmeyen ve işletim sisteminden gizlenmiş bir sabit disk alanıdır. Donanım üreticileri tarafından ilgili cihaza ait kurulum ve sürücü dosyalarını saklamak için kullanılır.</li> <li><strong>DCO(Device Configuration Overlay):</strong> BIOS, işletim sistemi veya kullanıcı tarafından erişilemez.</li> </ul> <p>Eğer kullanıcı tarafından adreslenebilir alan ile genel disk alanı arasında büyük bir boyut farkı varsa, HPA ve DCO alanları adli incelemeye alınmalıdır. Özellikle HPA alanın da alınacak imaj dosyası, adli tıp raporunda önemli bir yere sahiptir.</p> <p>Bilgisayara takılan her usb cihaza ait detaylı bilgiler registry’de kayıtlı olarak tutulur.</p> <p><img src="../assets/images/2018-10-18/05.png" alt="Adli Bilişim" /></p> <aside class="share"> <p>If you liked this article and think others should read it, please share it on <a href="http://twitter.com/share?text=Adli Bilişim Nedir?&amp;url=http://localhost:4000/adli-bilisim-nedir.html&amp;via=naoumine" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a> or <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/adli-bilisim-nedir.html" onclick="window.open(this.href, 'facebook-share', 'width=550,height=235');return false;">Facebook</a>.</p> </aside> </div> </article> <footer class="site-footer"> <div class="container"> <small class="block">&copy; 2019 Esra Nur SOYLU &middot; &lt;/&gt; Powered by <a href="https://ghost.org/">Ghost</a> | <a href="http://localhost:4000/feed.xml" target="_blank">RSS</a></small> </div> </footer> </main> <script type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-83161908-4']); _gaq.push(['_trackPageview']); (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script> </body> </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Adli Bilişim Nedir? | Esra NurSOYLU </title>
+    <meta name="description" content=" Adli Bilişim Nedir? ">
+    <meta name="keywords" content="pentester, purple teamer, csoc engineer, soc t2 analyst">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320"> <!-- Social: Facebook / Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="Esra Nur SOYLU">
+    <meta property="article:section" content="adli,, bilisim">
+    <meta property="article:tag" content="">
+    <meta property="article:published_time" content="2018-10-18 00:00:00 +0300">
+    <meta property="og:url" content="https://naoumine.com/adli-bilisim-nedir.html">
+    <meta property="og:title" content=" Adli Bilişim Nedir? | Esra NurSOYLU ">
+    <meta property="og:image" content="https://naoumine.com">
+    <meta property="og:description" content=" Adli Bilişim Nedir? ">
+    <meta property="og:site_name" content="Esra Nur SOYLU">
+    <meta property="og:locale" content="en_US"> <!-- Social: Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="naoumine">
+    <meta name="twitter:title" content=" Adli Bilişim Nedir? | Esra NurSOYLU ">
+    <meta name="twitter:description" content=" Adli Bilişim Nedir? ">
+    <meta name="twitter:image:src" content="https://naoumine.com"> <!-- Social: Google+ / Schema.org -->
+    <meta itemprop="name" content=" Adli Bilişim Nedir? | Esra NurSOYLU ">
+    <meta itemprop="description" content=" Adli Bilişim Nedir? ">
+    <meta itemprop="image" content="https://naoumine.com"> <!-- Canonical link tag -->
+    <link rel="canonical" href="https://naoumine.com/adli-bilisim-nedir.html">
+    <link rel="alternate" type="application/rss+xml" title="Esra NurSOYLU" href="https://naoumine.com/feed.xml">
+    <!-- rel prev and next -->
+    <link rel="stylesheet" href="https://naoumine.com/assets/css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+
+<body>
+    <main class="wrapper">
+        <header class="site-header">
+            <nav class="nav">
+                <div class="container">
+                    <h1 class="logo"><a href="https://naoumine.com/">Esra Nur<span>SOYLU</span></a></h1>
+                    <ul class="navbar">
+                        <li><a href="https://naoumine.com/about">WhoAmI</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+            <header class="post-header">
+                <p class="post-meta"><time datetime="2018-10-18T00:00:00+03:00" itemprop="datePublished">Oct 18,
+                        2018</time></p>
+                <h1 class="post-title" itemprop="name headline">Adli Bilişim Nedir?</h1>
+            </header>
+            <div class="post-content" itemprop="articleBody">
+                <h2 id="adli-bilişim-nedir">Adli Bilişim Nedir?</h2>
+                <p>Adli bilişim, bilişim sistemleri üzerinden genellikle veri olarak elde edilen delillerin toplanaması
+                    , saklanması , derlenmesi ve analizi konusunda çalışan bir bilim dalıdır. Bu alanda çalışırken adli
+                    bilişim uzmanının tabiri caizse şeytanın aklına gelecek detayların ve senaryoların üretilmesi
+                    gerekmektedir. Peki ne gibi şeylerle uğraşırlar ? Network forensics , Disk forensics , Mobile
+                    forensics , Memory forensics vs gibi … Bu yazımda daha çok disk forensics üstünde durmayı
+                    planlıyorum. Bu konular dışında bir adli bilişim uzmanının hukuki süreçler konusunda bilgili olmalı.
+                    Mesela ACR gibi bir uygulamayla kişi konuşmalarını ses kaydı altına aldığında ve bunu delil olarak
+                    sunmaya kalkıştığında mahkemede geçersiz olabiliyor. Ya da twitter’dan ekran görüntüsü aldığınızda
+                    bunu delil olarak nitelendirdiğinizde de aynı şekilde. Çünkü kişi html kodlarını değiştirip bunu
+                    iftira durumuna da dönüştürebilir.</p>
+                <p>Biraz daha teknik kısmına gelecek olursak , adli delil olarak bir sabit diskin imajını alırken iki
+                    yolumuz vardır: Fiziksel İmaj ve Mantıksal İmaj. Fiziksel imaj dediğimiz diskin tamamının
+                    kopyalanmasıdır. Mantıksal imajsa sabit diskin tamamının değil sadece bazı bölümlerinin imajının
+                    alınmasıdır. RAID sürücülerin veya şifrelenmiş sürücülerin imajlarının alınmasında mantıksal imaj
+                    almak önerilir.</p>
+                <h2 id="disk-forensics">Disk Forensics</h2>
+                <p>Delil olarak nitelendirilen disk üzerinden silinmiş dosyaların geri getirilmesi veya gizlenmiş,
+                    bozulmuş önemli dosyaların kurtarılması işlemini içerir. Bunun disk yapısı çok iyi bilinmelidir.</p>
+                <p>Bilgisayardan herhangi bir dosyayı sildiğinizde, sabit disk üzerinde silinen dosya için ayrılan alan
+                    yeni veri ile doldurulamazsa o veri kalıcı olarak silinmemiş demektir. Siz sildiğinizi sanarsınız
+                    ancak bir adli bilişim uzmanı çok uzun süre geçmesine rağmen o dosyanıza ulaşabilir. SSD(Solid State
+                    DRİVE -Katı Hal Sürücüler)’lerde durum biraz daha farklıdır.SSD’lerde veriler bloklar halinde
+                    saklanır. Yani bloğun silinmesi ile bloğun içeriği ön belleğe kayıt edilir, blok içeriğinin
+                    silinmesi ile ön belleğin üzerine yazılan bloğu siler, yeni veriyi ön belleğe yazar ve bloğu yeni
+                    veri ile yapılandırır.</p>
+                <p><img src="../assets/images/2018-10-18/01.jpg" alt="Adli Bilişim" /></p>
+                <p>Diskte bilginin tutulduğu alanlar Platter olarak adlandırılır. Günümüzde bir diskte 3 yada 4 tane
+                    platter bulunur. Platterlar gözle görünemeyen tracker(iz) sahiptir.</p>
+                <p>Harddisk ham haldeyken hangi bilginin nerede olduğunu anlamak için CHS(Cylinder Head Sector)
+                    kullanırız. CHS açılımından da görebileceğimiz gibi böylece bilginin hangi plakta, alt/üst
+                    yüzeylerden hangisinde olduğunu, kaçıncı sektörde olduğunu bilebiliriz.</p>
+                <p>Her bir sektör 512 Byte(A5 kağıdının yarısı kadar bilgi) alan işgal eder. Yani siz 1 GB boyutunda bir
+                    film izlemeye çalıştığınızda harddisk yaklaşık 1 milyon tane sektöre yazma işlemi yapar. Bununla baş
+                    etmek için dosya sistemleri gruplama yöntemini kullanmışlardır. 10 sektörü 1 grup içine alarak bunun
+                    adına da Cluster denmiştir.</p>
+                <p>USB taktığınız zaman size 64 sektörü(16 GB) bir araya getirerek 1 cluster oluşturur. Ve veriler
+                    buraya yazılır. Bu arada 1 cluster içerisine aynı anda birden fazla dosya yazılamaz.</p>
+                <p>Bir word dökümanı 10 KB civarındadır. Elimizde 32 KB boyutunda bir cluster olduğunu varsayalım.
+                    Geriye kalan 22 KB boş alan olarak kalır. Bu boş alanlar birleştiği zaman aslında diskin yarısının
+                    boşta olduğunu görebiliriz. Yani elimizde bulunan 500 GB boyutunda hard diskin 250 veya 300 GB
+                    boyutunu kullandığımızı söyleyebiliriz.</p>
+                <p><strong>Diskin üzerine herhangi bir veri yazılmadıysa o veri kurtarılabilir!</strong></p>
+                <p>Hard diskler 5400 RPM,7200 RPM ve 10000 RPM ile çalışabilir. Bunun anlamı şudur hard disk üzerindeki
+                    okuyucu kafanın disk üzerinde ne kadar hızlı gidip geldiğini ifade eder.</p>
+                <p>Bilgisayarınızı açtığınızda ilk olarak güç aldığında bu BIOS tarafına iletilir. BIOS ise ilk
+                    sinyalini hard diske iletir. Ve bu gelen sinyal sürekli ilk olarak aynı noktaya gelmek zorundadır.
+                    Bu noktaya MDR(Master Boot Record) denir. Sıfırıncı sektör de diyebiliriz. MBR bilgisayar için çok
+                    önemli bir kısımdır.Çünkü içerisinde partition bilgisini, işletim sistemi bilgisini ve işlemlerin
+                    çalışma sıraları vs bilgileri bulundurur.</p>
+                <p>En bilindik hard disk modelleri -&gt; Western Digital, Samsung, Seagate.</p>
+                <h2 id="dosya-yapıları">Dosya Yapıları</h2>
+                <p>Windows sistemleri genelde FAT ve NTFS dosya sistemi ile çalışır. Mac ise HFPS ile çalışır.</p>
+                <p><img src="../assets/images/2018-10-18/02.jpg" alt="Adli Bilişim" /></p>
+                <p>FAT (File Allocation Table) dosya sisteminde Directory Entry’de hangi datanın hangi cluster da
+                    olduğunu tutar.</p>
+                <p><img src="../assets/images/2018-10-18/03.jpg" alt="Adli Bilişim" /></p>
+                <p>Defragment: 45. Cluster’ı 42. Cluster’a getirip dosyaya hızlı ulaşmamızı sağlar. Parçalanmış büyük
+                    dosyaları mümkün olduğu kadar birbirine yakın tutmaya yarar. Özetlemek gerekirse bizim için üç tane
+                    önemli kısım vardır.</p>
+                <ul>
+                    <li>Data</li>
+                    <li>Directory Entry</li>
+                    <li>FAT Table</li>
+                </ul>
+                <p>İki senaryo hazırlayalım ve adli bilişim uzmanı gözünden bakalım:</p>
+                <ul>
+                    <li>Data Alanı ve Directory Entry alanına ulaşabildiğimizi ancak FAT Tablosuna ulaşamadığımız durum
+                        olursa dosyayı kurtarabiliriz.</li>
+                    <li>Data Alanı ve FAT Tablosuna ulaşabildiğimizi ancak Directory Entry alanına ulaşamadığımızı
+                        düşünürsek ise sadece dosya ismini kurtaramayız ama datayı elde edebiliriz.</li>
+                </ul>
+                <p>Olay yerinden elimize bir usb getirildiğini varsayarsak yapmamız gerekenleri anlatmak gerekirse ilk
+                    olarak usb imajını alarak gerçek usb dokunmamamız gerekmektedir.</p>
+                <p>Yazma koruma cihazımıza USB takıldıktan sonra bilgisayara bağlanır. Bunun nedeni bilgisayarın
+                    register kısmı USB’yi algıladığı zaman otomatikmen kod yükleme çalışır ki uyumlu olarak
+                    çalışabilmesi için. Ancak bu bizim istemediğimiz bir şeydir çünkü USB’nin orjinal halini bozarız ve
+                    elimizde hash değerini değiştirmiş oluruz. Bu yüzden kesinlikle USB cihazını direk olarak
+                    bilgisayara takmamalıyız. Ve ardından forensic cihazımızı(forensic tool,encase vb.) takıp kurtarma
+                    işlemine başlayabiliriz.</p>
+                <p>Alınan imajlar Raw, AFF ve E01 foramtında olabilir.</p>
+                <p><img src="../assets/images/2018-10-18/04.gif" alt="Adli Bilişim" /></p>
+                <p>Bir disk yapısına bakacak olursak;</p>
+                <h4 id="kullanıcı-tarafından-adreslenebilir-kısımlar">Kullanıcı tarafından adreslenebilir kısımlar</h4>
+                <ul>
+                    <li><strong>HPA(Host Protected Area):</strong> İşletim sistemi tarafından görülmeyen ve işletim
+                        sisteminden gizlenmiş bir sabit disk alanıdır. Donanım üreticileri tarafından ilgili cihaza ait
+                        kurulum ve sürücü dosyalarını saklamak için kullanılır.</li>
+                    <li><strong>DCO(Device Configuration Overlay):</strong> BIOS, işletim sistemi veya kullanıcı
+                        tarafından erişilemez.</li>
+                </ul>
+                <p>Eğer kullanıcı tarafından adreslenebilir alan ile genel disk alanı arasında büyük bir boyut farkı
+                    varsa, HPA ve DCO alanları adli incelemeye alınmalıdır. Özellikle HPA alanın da alınacak imaj
+                    dosyası, adli tıp raporunda önemli bir yere sahiptir.</p>
+                <p>Bilgisayara takılan her usb cihaza ait detaylı bilgiler registry’de kayıtlı olarak tutulur.</p>
+                <p><img src="../assets/images/2018-10-18/05.png" alt="Adli Bilişim" /></p>
+                <aside class="share">
+                    <p>If you liked this article and think others should read it, please share it on <a
+                            href="http://twitter.com/share?text=Adli Bilişim Nedir?&amp;url=https://naoumine.com/adli-bilisim-nedir.html&amp;via=naoumine"
+                            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a>
+                        or <a
+                            href="https://www.facebook.com/sharer/sharer.php?u=https://naoumine.com/adli-bilisim-nedir.html"
+                            onclick="window.open(this.href, 'facebook-share', 'width=550,height=235');return false;">Facebook</a>.
+                    </p>
+                </aside>
+            </div>
+        </article>
+        <footer class="site-footer">
+            <div class="container"> <small class="block">&copy; 2019 Esra Nur SOYLU &middot; &lt;/&gt; Powered by <a
+                        href="https://ghost.org/">Ghost</a> | <a href="https://naoumine.com/feed.xml"
+                        target="_blank">RSS</a></small> </div>
+        </footer>
+    </main>
+    <script
+        type="text/javascript"> var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-83161908-4']); _gaq.push(['_trackPageview']); (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })(); </script>
+</body>
+
+</html>

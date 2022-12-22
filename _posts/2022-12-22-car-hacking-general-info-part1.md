@@ -11,4 +11,4 @@ An electronic control unit (ECU) is a small device in a vehicle’s body that is
 
 Today’s vehicles may contain 100 ECUs or more, controlling functions that range from the essential (such as engine and power steering control) to comfort (such as power windows, seats and HVAC), to security and access (such as door locks and keyless entry). ECUs also control passive safety features, such as airbags, and even basic active safety features, such as automatic emergency braking.
 
-![CarHacking](../assets/images/2018-10-13/01.png)
+![CarHacking](../assets/images/2022-12-22/01.png)

@@ -4,11 +4,13 @@ title: About
 permalink: /about/
 ---
 
-I’m Esra Nur Soylu. I graduated from Sakarya University Computer Engineering. I’m working as a **SOC T2 Analyst**. Feeling like I’m working with a hobby(cyber searching) but also making money that’s a perfect feeling, really… I’m also dealing with **game programming**. 
+I’m Esra Nur Soylu. I graduated from Sakarya University Computer Engineering. I was involved in game development and website development while at university. I continued the industry by working both on the SOC side and on the pentester side. Thanks to this blog, I both take note of my research for myself and hope it will be a useful resource for everyone.
 
-I have a PRODAFT / INVICTUS DKHOS certificate.
+I have OSCP Certificate.
 
 **Ninjutsu** is a philosophy and sport that I have maintained for 2 years.
+
+Additionally, I love to participate in CTF competitions.
 
 I guess that’s all for now…
 
@@ -20,3 +22,4 @@ LinkedIn: [LinkedIn]
 [LinkedIn]: https://www.linkedin.com/in/esra-nur-soylu-5a384ba2/
 [Github]: https://github.com/nuresrasoylu
 [Twitter]: https://twitter.com/naoumine
+[Youtube]: https://www.youtube.com/@esranursoylu7184
